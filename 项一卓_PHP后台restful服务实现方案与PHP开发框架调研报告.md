@@ -1,14 +1,14 @@
 ## PHP后台restful服务实现方案与PHP开发框架调研报告
 
-REST（英文：Representational State Transfer，简称REST) ， 直译为表现层状态转移，或者表述性状态转移；Rest 指的是一组架构约束条件和原则，是web服务的一种架构风格，一种设计风格，是一种思想；同时Rest不是针对某一种编程语言的。
+rest（英文：Representational State Transfer，简称rest) ， 直译为表现层状态转移，或者表述性状态转移；rest 指的是一组架构约束条件和原则，是web服务的一种架构风格，一种设计风格，是一种思想；同时rest不是针对某一种编程语言的。
 
 **本质：**一种软件架构风格 
 
-**核心：**面向资源设计的API在制作微信小程序的过程中，后台服务的实现是至关重要的一环。本文将探讨如何使用PHP语言实现RESTful服务，并简要介绍几种流行的PHP开发框架。
+**核心：**面向资源设计的API在制作微信小程序的过程中，后台服务的实现是至关重要的一环。本文将探讨如何使用PHP语言实现restful服务，并简要介绍几种流行的PHP开发框架。
 
-## PHP后台RESTful服务实现方案
+## PHP后台restful服务实现方案
 
-RESTful架构风格的Web API称为RESTful API，它定义了资源的三个基本方面：
+restful架构风格的Web API称为restful API，它定义了资源的三个基本方面：
 
 - 资源的地址（URI）
 
@@ -17,8 +17,8 @@ RESTful架构风格的Web API称为RESTful API，它定义了资源的三个基�
 - 资源的操作（如POST、GET、PUT或DELETE方法）
 
 
-在PHP语言中，我们可以不依赖任何框架来创建RESTful服务。例如，可以通过.htaccess文件和PHP脚本来处理HTTP请求，并返回相应的资源。
-一个简单的RESTful服务类可能包含获取所有资源列表和获取单个资源的方法。此外，还需要一个基类来处理HTTP状态码和响应头。
+在PHP语言中，我们可以不依赖任何框架来创建restful服务。例如，可以通过.htaccess文件和PHP脚本来处理HTTP请求，并返回相应的资源。
+一个简单的restful服务类可能包含获取所有资源列表和获取单个资源的方法。此外，还需要一个基类来处理HTTP状态码和响应头。
 
 ## 常见的PHP开发框架
 
@@ -38,14 +38,14 @@ PHP框架提供了一套工具和库，以便更快速、更规范地开发应�
 
 ### 设计概念和准则
 
-符合REST设计风格的Web API称为RESTful API。它从以下三个方面资源进行定义：
+符合rest设计风格的Web API称为restful API。它从以下三个方面资源进行定义：
 
 直观简短的资源地址：URI，比如：http://example.com/resources/。
 传输的资源：Web服务接受与返回的互联网媒体类型，比如：JSON，XML，YAM等。
 对资源的操作：Web服务在该资源上所支持的一系列请求方法（比如：POST，GET，PUT或DELETE）。
 以webService为例通俗解释。
 
-非Rest设计，以往我们都会这么写：
+非rest设计，以往我们都会这么写：
 
 http://localhost:8080/admin/getUser （查询用户）
 
@@ -57,7 +57,7 @@ http://localhost:8080/admin/deleteUser （删除用户）
 
 总结：以不同的URL（主要为使用动词）进行不同的操作。
 
-Rest架构：
+rest架构：
 
 GET http://localhost:8080/admin/user （查询用户）
 
@@ -69,7 +69,7 @@ DELETE http://localhost:8080/admin/user （删除用户）
 
 总结：URL只指定资源，以HTTP方法动词进行不同的操作。用HTTP STATUS/CODE定义操作结果。
 
-Restful：遵守了rest风格的web服务便可称为Restful。
+restful：遵守了rest风格的web服务便可称为restful。
 
 常用的响应状态码 (httpCode)
 
@@ -101,14 +101,14 @@ Restful：遵守了rest风格的web服务便可称为Restful。
 【PATCH】一般不用，用【PUT】
 
 查询参数
-RESTful API 接口应该提供参数，过滤返回结果。
+restful API 接口应该提供参数，过滤返回结果。
 
 【GET】 /{version}/{resources}/{resource_id}?offset=0&limit=20
 
 响应参数
 JSON格式（code、data、msg）
 
-## 为什么需要Restful？
+## 为什么需要restful？
 URL具有很强可读性的，具有自描述性， 对程序员友好
 
 1. 规范化请求过程和返回结果
@@ -136,4 +136,4 @@ URL具有很强可读性的，具有自描述性， 对程序员友好
 在选择PHP框架时，需要考虑项目的规模、复杂性以及团队的经验。例如，Laravel适用于中大型项目，而CodeIgniter则更适合小型项目和初学者。
 
 ## 总结
-PHP后台RESTful服务的实现可以不依赖框架，但使用框架可以提高开发效率和代码质量。同时在选择框架时，应根据项目需求和团队熟悉度来决定。
+PHP后台restful服务的实现可以不依赖框架，但使用框架可以提高开发效率和代码质量。同时在选择框架时，应根据项目需求和团队熟悉度来决定。
