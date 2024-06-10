@@ -12,9 +12,15 @@
 
 ## 页面展示
 
-<img src="(https://github.com/ArnoXiang/Mini-Program/assets/100560218/68c8e9a9-c027-484a-834c-b73e75b44ff6)" alt="示例图片" width="300">
+<img src="https://github.com/ArnoXiang/Mini-Program/assets/100560218/68c8e9a9-c027-484a-834c-b73e75b44ff6" alt="抓取新闻展示页面" width="300">
 
-![新闻内容页面](https://github.com/ArnoXiang/Mini-Program/assets/100560218/f8850bed-e8d9-4e6a-bed3-2cfe51f0a396)
+<p>1. 新闻展示页面</p>
+
+### 
+
+<img src="https://github.com/ArnoXiang/Mini-Program/assets/100560218/f8850bed-e8d9-4e6a-bed3-2cfe51f0a396" alt="新闻内容页面" width="300">
+
+<p>2. 新闻内容页面</p>
 
 ## 目录结构
 
