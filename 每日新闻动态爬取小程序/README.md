@@ -10,6 +10,12 @@
 3. **新闻页面**：展示最新的新闻内容。
 4. **WebView 页面**：嵌入外部网页内容。
 
+## 页面展示
+
+<img src="(https://github.com/ArnoXiang/Mini-Program/assets/100560218/68c8e9a9-c027-484a-834c-b73e75b44ff6)" alt="示例图片" width="300">
+
+![新闻内容页面](https://github.com/ArnoXiang/Mini-Program/assets/100560218/f8850bed-e8d9-4e6a-bed3-2cfe51f0a396)
+
 ## 目录结构
 
 ```
