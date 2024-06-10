@@ -13,7 +13,7 @@
 ## 目录结构
 
 ```
-your-project/
+integrate_news/
 ├── app.js              // 小程序入口文件
 ├── app.json            // 小程序全局配置文件
 ├── app.wxss            // 小程序全局样式文件
