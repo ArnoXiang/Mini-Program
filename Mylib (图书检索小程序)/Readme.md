@@ -41,9 +41,6 @@ Mylib/
 │   │   ├── book/
 │   │   │   ├── book-template.wxml
 │   │   │   └── book-template.wxss
-│   │   ├── star/
-│   │   │   ├── star-template.wxml
-│   │   │   └── star-template.wxss
 │   │   ├── books.js
 │   │   ├── books.json
 │   │   ├── books.wxml
