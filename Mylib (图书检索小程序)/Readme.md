@@ -7,3 +7,73 @@
 ## 202406:
 - 使用聚合数据调取图书榜单失败，需解决；
 - 将“发现”页暂更改为个人信息页，展示内容为“个人信息”、“个人推荐图书展示”
+
+## 文件目录框架
+```
+Mylib/
+│
+├── data/
+│   ├── family.js
+│   ├── gens.js
+│   └── spes.js
+│
+├── img/
+│   └── family/ (图书类别图片)
+│
+├── pages/
+│   ├── books/
+│   │   ├── book/
+│   │   │   ├── book-template.wxml
+│   │   │   └── book-template.wxss
+│   │   ├── star/
+│   │   │   ├── star-template.wxml
+│   │   │   └── star-template.wxss
+│   │   ├── books.js
+│   │   ├── books.json
+│   │   ├── books.wxml
+│   │   └── books.wxss
+│   │
+│   ├── detail/
+│   │   ├── detail.js
+│   │   ├── detail.json
+│   │   ├── detail.wxml
+│   │   └── detail.wxss
+│   │
+│   ├── family-item/
+│   │   ├── family-item-template.wxml
+│   │   └── family-item-template.wxss
+│   │
+│   ├── genus/
+│   │   ├── genus.js
+│   │   ├── genus.json
+│   │   ├── genus.wxml
+│   │   └── genus.wxss
+│   │
+│   ├── species/
+│   │   ├── species.js
+│   │   ├── species.json
+│   │   ├── species.wxml
+│   │   └── species.wxss
+│   │
+│   ├── tujian-family/
+│   │   ├── tujian-family.js
+│   │   ├── tujian-family.json
+│   │   ├── tujian-family.wxml
+│   │   └── tujian-family.wxss
+│   │
+│   ├── welcome/
+│   │   ├── welcome.js
+│   │   ├── welcome.json
+│   │   ├── welcome.wxml
+│   │   └── welcome.wxss
+│
+├── utils/
+│   └── utils.js
+│
+├── app.js
+├── app.json
+├── app.wxss
+├── project.config.json
+├── project.private.config.json
+
+```
